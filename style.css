@@ -1,0 +1,86 @@
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border:2px solid rgb(62, 62, 62);
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(255, 139, 145);
+    text-decoration: underline;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group .left,
+.form-group .right {
+    width: 48%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+   
+}
+
+input {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+button {
+    width: 50%;
+    padding: 5px;
+    background-color: rgb(255, 139, 145);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.bouton{
+   display: flex;
+   justify-content: center;
+   
+}
+.espace{
+    height: 50px;
+}
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: 160px;
+   
+  }
+  
+  .table td, #tableau th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    
+  }
+  
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color:  rgb(255, 139, 145);
+    color: white;
+
+  }
+
+  td {
+    text-align: center;
+    padding: 5px;
+}

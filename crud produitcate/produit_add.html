@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produit_add.css">
+    <title>Ajouter un Produit</title>
+</head>
+<body>
+
+    
+ 
+    <div class="form-container">
+        <h2>Ajouter un Produit</h2>
+        <form id="produitForm">
+            <div class="form-group">
+                <label for="libelle">Libellé</label>
+                <input type="text" id="libelle" name="libelle" >
+                <span class="error-message" id="libelleError" style="color:red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="quantite_de_stock">Quantité de stock</label>
+                <input type="number" id="quantite_de_stock" name="quantite_de_stock" >
+                <span class="error-message" id="quantite_de_stockError" style="color:red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="prix">Prix</label>
+                <input type="number" id="prix" name="prix" >
+                <span class="error-message" id="prixError" style="color:red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="date_expiration">Date d'expiration</label>
+                <input type="date" id="date_expiration" name="date_expiration" >
+                <span class="error-message" id="date_expirationError" style="color:red"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="categorie">Catégorie</label>
+                <select id="categorie" name="categorie" >
+                    <option>Choisir une catégorie</option>
+                    <!-- Ajoutez vos options de catégories ici -->
+                    <option value="1">Catégorie 1</option>
+                    <option value="2">Catégorie 2</option>
+                </select>
+                <span id="categorieError" class="error-message" style="color:red"></span>
+            </div>
+
+
+            <button type="submit" id="submitButton">Ajouter Produit</button>
+        </form>
+    </div>
+
+    <script src="produit_add.js"></script>
+
+</body>
+</html>

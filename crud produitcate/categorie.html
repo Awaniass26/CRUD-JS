@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="categorie.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="bloc">
+    <div class="form-container">
+        <h2>Ajouter une categorie</h2>
+        <form id="cateForm">
+            <div class="form-group">
+                <label for="libelle">Libellé</label>
+                <input type="text" id="libelle" name="libelle" required>
+                <span class="error-message" id="libelleError" style="color:red"></span>
+            </div>
+            
+            <button type="submit" id="submitButton">Ajouter Produit</button>
+           
+
+            <input type="hidden" name="id">
+        </form>
+    </div>
+    <div class="espace"></div>
+
+    <div class="table-container">
+        <h2>Liste des Catégories</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Libellé</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="cateTable">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="categorie.js"></script>
+</div>
+</body>
+</html>
